@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Bai_Jamjuree } from 'next/font/google'
 
 const baiJamjuree = Bai_Jamjuree({ 
-  weight: ['400', '600'],
+  weight: ['300', '400', '500', '600'],
   subsets: ['latin'] 
 })
 

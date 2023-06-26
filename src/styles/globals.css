@@ -7,7 +7,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-center text-color-title font-bold mt-16 mb-6;
+  @apply text-center text-color-title font-medium mt-16 mb-6;
 }
 
 h2 {
@@ -19,5 +19,5 @@ h3 {
 }
 
 body {
-  @apply text-base;
+  @apply text-base font-light;
 }
