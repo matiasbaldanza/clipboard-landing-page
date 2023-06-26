@@ -13,8 +13,11 @@ export default function Home() {
         <main className='flex flex-col items-center pt-[125px]'>
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
-          <h2>A history of everything you copy</h2>
-          <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+          <div className='mb-8'>
+            <h2>A history of everything you copy</h2>
+            <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+          </div>
+
         </main>
       </div>
     </div>
