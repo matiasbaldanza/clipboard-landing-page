@@ -17,10 +17,10 @@ export default function Home() {
             <h2>A history of everything you copy</h2>
             <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
           </div>
-          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-primary border-b-black/25 hover:border-b-transparent hover:translate-y-[4px] transition duration-150 shadow-lg shadow-primary/25 hover:shadow-xs hover:shadow-primary/10'>
+          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-primary border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg shadow-primary/25 active:shadow-xs active:shadow-primary/10 hover:bg-primary/95 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-primary/25'>
             Download for iOS
           </button>
-          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-secondary border-b-black/25 hover:border-b-transparent hover:translate-y-[4px] transition duration-150 shadow-lg shadow-secondary/25 hover:shadow-xs hover:shadow-secondary/10'>
+          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-secondary border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg shadow-secondary/25 active:shadow-xs active:shadow-secondary/10 hover:bg-secondary/95 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-secondary/25'>
             Download for Mac
           </button>
         </main>
