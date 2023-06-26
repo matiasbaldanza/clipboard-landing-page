@@ -1,10 +1,22 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Bai_Jamjuree } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const baiJamjuree = Bai_Jamjuree({ 
+  weight: ['400', '600'],
+  subsets: ['latin'] 
+})
 
 export default function Home() {
   return (
-    <div>Hola Mundo</div>
+    <div className={`${baiJamjuree.className} min-h-screen bg-background text-color-text bg-[url('/img/bg-header-mobile.png')] bg-top bg-no-repeat bg-contain`}>
+      <div className='container flex flex-col items-center w-full px-8 text-center'>
+        <main className='flex flex-col items-center pt-[125px]'>
+          <h1 className='h-0 opacity-0'>Clipboard</h1>
+          <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
+          <h2>A history of everything you copy</h2>
+          <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+        </main>
+      </div>
+    </div>
   )
 }
