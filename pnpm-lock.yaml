@@ -7,6 +7,7 @@ specifiers:
   autoprefixer: 10.4.14
   eslint: 8.43.0
   eslint-config-next: 13.4.7
+  new-component: ^5.0.2
   next: 13.4.7
   postcss: 8.4.24
   react: 18.2.0
@@ -21,6 +22,7 @@ dependencies:
   autoprefixer: 10.4.14_postcss@8.4.24
   eslint: 8.43.0
   eslint-config-next: 13.4.7_7yfldhli4vs6yywnkyiujhawka
+  new-component: 5.0.2
   next: 13.4.7_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.24
   react: 18.2.0
@@ -626,6 +628,11 @@ packages:
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    dev: false
+
+  /commander/10.0.1:
+    resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
+    engines: {node: '>=14'}
     dev: false
 
   /commander/4.1.1:
@@ -1787,6 +1794,15 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
+  /new-component/5.0.2:
+    resolution: {integrity: sha512-ac49GT+QZZKSg4kF1b2++YJGDD8fZKIgDhjAzAZ1aAW8ROAG2bGlaQWEaS3AiO7kD/FP0B+0IyqGYAEBlkUI+g==}
+    hasBin: true
+    dependencies:
+      chalk: 4.1.2
+      commander: 10.0.1
+      prettier: 2.8.4
+    dev: false
+
   /next/13.4.7_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-M8z3k9VmG51SRT6v5uDKdJXcAqLzP3C+vaKfLIAM0Mhx1um1G7MDnO63+m52qPdZfrTFzMZNzfsgvm3ghuVHIQ==}
     engines: {node: '>=16.8.0'}
@@ -2114,6 +2130,12 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: false
+
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: false
 
   /prop-types/15.8.1:

@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import { Bai_Jamjuree } from 'next/font/google'
 
+// Components
+import ActionButton from '../components/ActionButton'
+
 const baiJamjuree = Bai_Jamjuree({ 
   weight: ['300', '400', '500', '600'],
   subsets: ['latin'] 
@@ -17,12 +20,14 @@ export default function Home() {
             <h2>A history of everything you copy</h2>
             <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
           </div>
-          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-primary border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg shadow-primary/25 active:shadow-xs active:shadow-primary/10 hover:bg-primary/95 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-primary/25'>
-            Download for iOS
-          </button>
-          <button className='w-full p-3 mt-6 text-lg text-white border-b-4 rounded-full bg-secondary border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg shadow-secondary/25 active:shadow-xs active:shadow-secondary/10 hover:bg-secondary/95 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-secondary/25'>
-            Download for Mac
-          </button>
+          <div className='flex flex-col justify-center w-full gap-6 sm:flex-row'>
+            <ActionButton color='primary'>
+              Download for iOS
+            </ActionButton>
+            <ActionButton color='secondary'>
+              Download for Mac
+            </ActionButton>
+          </div>
         </main>
       </div>
     </div>
