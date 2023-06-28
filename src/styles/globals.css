@@ -25,3 +25,5 @@ h4 {
 body {
   @apply text-base font-light md:text-lg;
 }
+
+/* * { outline: 2px solid red; } */

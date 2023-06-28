@@ -11,9 +11,9 @@ const baiJamjuree = Bai_Jamjuree({
 
 export default function Home() {
   return (
-    <div className={`${baiJamjuree.className} min-h-screen bg-background text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
-      <div className='container flex flex-col items-center px-8 m-auto text-center md:max-w-screen-2xl'>
-        <main className='flex flex-col items-center pt-[125px]'>
+    <div className={`${baiJamjuree.className} min-h-screen bg-neutral-50 text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
+      <main className='container flex flex-col items-center px-8 m-auto text-center md:max-w-screen-2xl'>
+        <section className='flex flex-col items-center pt-[125px]'>
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
           <div className='mt-16 mb-10'>
@@ -28,7 +28,7 @@ export default function Home() {
               Download for Mac
             </ActionButton>
           </div>
-        </main>
+        </section>
 
         <section className='flex flex-col items-center mt-16'>
           <div className='mb-8'>
@@ -67,18 +67,18 @@ export default function Home() {
             <h3>Supercharge your workflow</h3>
             <p>We’ve got the tools to boost your productivity..</p>
           </div>
-          <div className='flex flex-col gap-8 sm:flex-row'>
-              <div className='flex flex-col items-center gap-2'>
+          <div className='flex flex-col gap-8 md:flex-row'>
+              <div className='flex flex-col items-center gap-2 sm:flex-1'>
                 <Image src='/img/icon-blacklist.svg' height={36} width={36} alt='Blacklist icon' className='mb-4'/>
                 <h4>Create blacklists</h4>
                 <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
               </div>
-              <div className='flex flex-col items-center gap-2'>
+              <div className='flex flex-col items-center gap-2 sm:flex-1'>
                 <Image src='/img/icon-text.svg' height={36} width={36} alt='Text icon' className='mb-4'/>
                 <h4>Plain text snippets</h4>
                 <p>Remove unwanted formatting from copied text for a consistent look.</p>
               </div>
-              <div className='flex flex-col items-center gap-2'>
+              <div className='flex flex-col items-center gap-2 sm:flex-1'>
                 <Image src='/img/icon-preview.svg' height={36} width={36} alt='Preview icon' className='mb-4'/>
                 <h4>Sneak preview</h4>
                 <p>Quick preview of all snippets on your Clipboard for easy access.</p>
@@ -86,35 +86,66 @@ export default function Home() {
           </div>
         </section>
         <section className='mt-16'>
-          <div className='flex flex-col items-center gap-12'>
+          <div className='flex flex-col items-center gap-12 md:flex-row'>
             <img 
               src='/img/logo-google.png' 
               alt="Google logo" 
-              className='w-32'
+              className='w-32 md:w-24'
             />
             <img 
               src='/img/logo-ibm.png' 
               alt="IBM logo" 
-              className='w-32'
+              className='w-32 md:w-24'
             />
             <img 
               src='/img/logo-microsoft.png' 
               alt="Microsoft logo" 
-              className='w-32'
+              className='w-32 md:w-24'
             />
             <img 
               src='/img/logo-hp.png' 
               alt="HP logo" 
-              className='w-32'
+              className='w-32 md:w-24'
             />
             <img 
               src='/img/logo-vector-graphics.png' 
               alt="Vector Graphics logo" 
-              className='w-32'
+              className='w-32 md:w-24'
             />
           </div>
         </section>
-      </div>
+        <section className='flex flex-col items-center pt-[125px]'>
+          <div className='mt-16 mb-10'>
+            <h2>Clipboard for iOS and Mac OS</h2>
+            <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+          </div>
+          <div className='flex flex-col justify-center w-full gap-6 sm:flex-row'>
+            <ActionButton color='primary'>
+              Download for iOS
+            </ActionButton>
+            <ActionButton color='secondary'>
+              Download for Mac
+            </ActionButton>
+          </div>
+        </section>
+      </main>
+      <footer className='py-16 m-auto mt-16 bg-background min-h-7xl'>
+        <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl'>
+          <Image src='/img/logo.svg' height={72} width={72} alt='Clipboard logo' />
+          <nav className='flex flex-col flex-wrap items-center gap-6 text-lg text-color-title md:flex-row md:text-base md:gap-3'>
+              <a href='#' className='md:w-1/4 hover:text-primary'>FAQs</a>
+              <a href='#' className='md:w-1/4 hover:text-primary'>Contact Us</a>
+              <a href='#' className='md:w-1/4 hover:text-primary'>Privacy Policy</a>
+              <a href='#' className='md:w-1/4 hover:text-primary'>Press Kit</a>
+              <a href='#' className='md:w-1/4 hover:text-primary'>Install Guide</a>
+          </nav>
+          <div className='flex gap-12'>
+            <a href="#" target='_blank'><Image src='/img/icon-facebook.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
+            <a href="#" target='_blank'><Image src='/img/icon-twitter.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
+            <a href="#" target='_blank'><Image src='/img/icon-instagram.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

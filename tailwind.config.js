@@ -22,6 +22,7 @@ module.exports = {
         'color-title': 'hsl(210, 10%, 33%)',
         'color-text': 'hsl(201, 11%, 66%)',
         'background': '#F2F2F2',          // Concrete
+        'background-darker': '#979797'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
