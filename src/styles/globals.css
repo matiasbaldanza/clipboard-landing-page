@@ -12,7 +12,7 @@ h6 {
 }
 
 h2 {
-  @apply text-3xl leading-snug mb-6;
+  @apply text-3xl leading-snug mb-4;
 }
 
 h3 {
@@ -26,6 +26,11 @@ h4 {
 body {
   @apply text-base font-light md:text-lg;
   text-wrap: balance;
+}
+
+/* Adjustment to prevent copy below an h2 or h3 be one-line*/
+section > div > p {
+  @apply md:px-12;
 }
 
 /* * { outline: 2px solid red; } */

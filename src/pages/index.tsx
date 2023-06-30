@@ -21,8 +21,8 @@ export default function Home() {
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
         </header>
-        <section className='flex flex-col items-center'>
-          <div className='mb-10'>
+        <section className='flex flex-col items-center gap-10'>
+          <div>
             <h2>A history of everything you copy</h2>
             <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
           </div>
@@ -36,22 +36,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col items-center'>
-          <div className='mb-8'>
+        <section className='flex flex-col items-center gap-8'>
+          <div>
             <h3>Keep track of your snippets</h3>
             <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
           </div>
           <div className='flex flex-col items-center w-full gap-8 md:flex-row'>
-            <div className='w-full h-full md:relative md:basis-1/2 md:h-[32rem]'>
+            <div className='w-full h-full md:relative md:basis-1/2 md:h-[30rem]'>
               <Image
-                className='h-full md:object-cover md:absolute md:top-0 md:right-0 md:overflow-x-visible md:-translate-x-1/2 xl:-translate-x-24'
+                className='h-full md:object-cover md:absolute md:top-0 md:right-0 md:overflow-x-visible md:-translate-x-[12rem] lg:-translate-x-[9rem] xl:-translate-x-24 transition-all duration-75'
                 src='/img/image-computer.png'
                 width={752}
                 height={572}
                 alt='Computer illustration'
               />
             </div>
-            <div className='flex flex-col gap-8 md:text-left md:basis-2/3'>
+            <div className='flex flex-col gap-8 md:text-left md:basis-2/3 md:pb-24'>
                 <div className='flex flex-col gap-2'>
                   <h4>Quick Search</h4>
                   <p>Easily search your snippets by content, category, web address, application, and more.</p>
@@ -68,16 +68,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col items-center'>
-          <div className='mb-8'>
+        <section className='flex flex-col items-center gap-8'>
+          <div>
             <h3>Access Clipboard Anywhere</h3>
             <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
           </div>
           <Image src='/img/image-devices.png' width={500} height={500} alt='Multiple devices'/>
         </section>
 
-        <section className='flex flex-col items-center'>
-          <div className='mb-8'>
+        <section className='flex flex-col items-center gap-12'>
+          <div>
             <h3>Supercharge your workflow</h3>
             <p>We’ve got the tools to boost your productivity..</p>
           </div>
@@ -128,8 +128,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className='flex flex-col items-center'>
-          <div className='mb-10'>
+        <section className='flex flex-col items-center gap-10'>
+          <div>
             <h2>Clipboard for iOS and Mac OS</h2>
             <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
           </div>
