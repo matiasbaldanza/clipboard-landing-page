@@ -12,7 +12,7 @@ const baiJamjuree = Bai_Jamjuree({
 export default function Home() {
   return (
     <div className={`${baiJamjuree.className} min-h-screen bg-neutral-50 text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
-      <main className='container flex flex-col items-center px-8 m-auto text-center md:max-w-screen-2xl'>
+      <main className='container flex flex-col items-center px-8 m-auto text-center md:max-w-screen-xl'>
         <section className='flex flex-col items-center pt-[125px]'>
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
@@ -38,7 +38,7 @@ export default function Home() {
           <div className='flex flex-col items-center w-full gap-8 md:flex-row'>
             <div className='w-full h-full md:relative md:basis-1/2 md:h-[32rem]'>
               <Image
-                className='h-full md:object-cover md:absolute md:top-0 md:right-0 md:overflow-x-visible md:-translate-x-1/2 xl:-translate-x-12'
+                className='h-full md:object-cover md:absolute md:top-0 md:right-0 md:overflow-x-visible md:-translate-x-1/2 xl:-translate-x-24'
                 src='/img/image-computer.png'
                 width={752}
                 height={572}
