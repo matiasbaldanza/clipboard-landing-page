@@ -8,6 +8,7 @@ h4,
 h5,
 h6 {
   @apply text-center text-color-title font-medium;
+  text-wrap: balance;
 }
 
 h2 {

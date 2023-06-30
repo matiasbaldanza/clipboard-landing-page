@@ -11,12 +11,18 @@ const baiJamjuree = Bai_Jamjuree({
 
 export default function Home() {
   return (
+    // Fondo
     <div className={`${baiJamjuree.className} min-h-screen bg-neutral-50 text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
-      <main className='container flex flex-col items-center px-8 m-auto text-center md:max-w-screen-xl'>
-        <section className='flex flex-col items-center pt-[125px]'>
+
+      {/* container */}
+      <main className='container flex flex-col items-center gap-32 px-8 m-auto text-center md:max-w-screen-xl'>
+        
+        <header className='mt-32'>
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
-          <div className='mt-16 mb-10'>
+        </header>
+        <section className='flex flex-col items-center'>
+          <div className='mb-10'>
             <h2>A history of everything you copy</h2>
             <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
           </div>
@@ -30,7 +36,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col items-center mt-16'>
+        <section className='flex flex-col items-center'>
           <div className='mb-8'>
             <h3>Keep track of your snippets</h3>
             <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
@@ -62,7 +68,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='flex flex-col items-center mt-16'>
+        <section className='flex flex-col items-center'>
           <div className='mb-8'>
             <h3>Access Clipboard Anywhere</h3>
             <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
@@ -70,7 +76,7 @@ export default function Home() {
           <Image src='/img/image-devices.png' width={500} height={500} alt='Multiple devices'/>
         </section>
 
-        <section className='flex flex-col items-center mt-16'>
+        <section className='flex flex-col items-center'>
           <div className='mb-8'>
             <h3>Supercharge your workflow</h3>
             <p>We’ve got the tools to boost your productivity..</p>
@@ -93,7 +99,7 @@ export default function Home() {
               </div>
           </div>
         </section>
-        <section className='mt-16'>
+        <section>
           <div className='flex flex-col items-center gap-12 md:flex-row'>
             <img 
               src='/img/logo-google.png' 
@@ -122,8 +128,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className='flex flex-col items-center pt-[125px]'>
-          <div className='mt-16 mb-10'>
+        <section className='flex flex-col items-center'>
+          <div className='mb-10'>
             <h2>Clipboard for iOS and Mac OS</h2>
             <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
           </div>
@@ -137,7 +143,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className='py-16 m-auto mt-16 bg-background min-h-7xl'>
+      <footer className='py-16 m-auto mt-32 bg-background min-h-7xl'>
         <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl'>
           <Image src='/img/logo.svg' height={72} width={72} alt='Clipboard logo' />
           <nav className='flex flex-col flex-wrap items-center gap-6 text-lg text-color-title md:flex-row md:text-base md:gap-3'>
