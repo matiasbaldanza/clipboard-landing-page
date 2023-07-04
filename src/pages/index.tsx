@@ -9,6 +9,29 @@ const baiJamjuree = Bai_Jamjuree({
   subsets: ['latin'] 
 })
 
+const testimonialLogos = [
+  {
+    url: '/img/logo-google.png',
+    alt: 'Google logo',
+  },
+  {
+    url: '/img/logo-ibm.png',
+    alt: 'IBM logo',
+  },
+  {
+    url: '/img/logo-microsoft.png',
+    alt: 'Microsoft logo',
+  },
+  {
+    url: '/img/logo-hp.png',
+    alt: 'HP logo',
+  },
+  {
+    url: '/img/logo-vector-graphics.png',
+    alt: 'Vector Graphics logo',
+  }
+]
+
 export default function Home() {
   return (
     // Fondo
@@ -100,32 +123,22 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-col items-center gap-12 md:flex-row'>
-            <img 
-              src='/img/logo-google.png' 
-              alt="Google logo" 
-              className='w-32 md:w-24'
-            />
-            <img 
-              src='/img/logo-ibm.png' 
-              alt="IBM logo" 
-              className='w-32 md:w-24'
-            />
-            <img 
-              src='/img/logo-microsoft.png' 
-              alt="Microsoft logo" 
-              className='w-32 md:w-24'
-            />
-            <img 
-              src='/img/logo-hp.png' 
-              alt="HP logo" 
-              className='w-32 md:w-24'
-            />
-            <img 
-              src='/img/logo-vector-graphics.png' 
-              alt="Vector Graphics logo" 
-              className='w-32 md:w-24'
-            />
+          <div className='flex flex-col flex-wrap items-center gap-12 md:flex-row md:max-w-[768px] max-h-auto md:max-h-full'>
+            {
+              testimonialLogos.map(({url, alt}) => (
+                <div 
+                  key={alt}
+                  className='relative w-32 h-12 md:w-[6.5rem]'
+                >
+                  <Image
+                    className='object-contain'
+                    src={url}
+                    alt={alt}
+                    fill
+                  />
+                </div>
+              ))
+            }
           </div>
         </section>
         <section className='flex flex-col items-center gap-10'>
