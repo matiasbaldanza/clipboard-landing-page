@@ -4,6 +4,7 @@ import { Bai_Jamjuree } from 'next/font/google'
 // Components
 import ActionButton from '../components/ActionButton'
 import NavMenu from '../components/NavMenu'
+import SocialLinks from '../components/SocialLinks'
 
 const baiJamjuree = Bai_Jamjuree({ 
   weight: ['300', '400', '500', '600'],
@@ -161,11 +162,7 @@ export default function Home() {
         <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl'>
           <Image src='/img/logo.svg' height={72} width={72} alt='Clipboard logo' />
           <NavMenu />
-          <div className='flex gap-12'>
-            <a href="#" target='_blank'><Image src='/img/icon-facebook.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
-            <a href="#" target='_blank'><Image src='/img/icon-twitter.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
-            <a href="#" target='_blank'><Image src='/img/icon-instagram.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
-          </div>
+          <SocialLinks />
         </div>
       </footer>
     </div>
