@@ -3,6 +3,7 @@ import { Bai_Jamjuree } from 'next/font/google'
 
 // Components
 import ActionButton from '../components/ActionButton'
+import NavMenu from '../components/NavMenu'
 
 const baiJamjuree = Bai_Jamjuree({ 
   weight: ['300', '400', '500', '600'],
@@ -159,13 +160,7 @@ export default function Home() {
       <footer className='py-16 m-auto mt-32 bg-background min-h-7xl'>
         <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl'>
           <Image src='/img/logo.svg' height={72} width={72} alt='Clipboard logo' />
-          <nav className='flex flex-col flex-wrap items-center gap-6 text-lg text-color-title md:flex-row md:text-base md:gap-3'>
-              <a href='#' className='md:w-1/4 hover:text-primary'>FAQs</a>
-              <a href='#' className='md:w-1/4 hover:text-primary'>Contact Us</a>
-              <a href='#' className='md:w-1/4 hover:text-primary'>Privacy Policy</a>
-              <a href='#' className='md:w-1/4 hover:text-primary'>Press Kit</a>
-              <a href='#' className='md:w-1/4 hover:text-primary'>Install Guide</a>
-          </nav>
+          <NavMenu />
           <div className='flex gap-12'>
             <a href="#" target='_blank'><Image src='/img/icon-facebook.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
             <a href="#" target='_blank'><Image src='/img/icon-twitter.svg' alt='' width={32} height={32} className='hover:text-primary'/></a>
