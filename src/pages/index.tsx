@@ -123,7 +123,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-col flex-wrap items-center gap-12 md:flex-row md:max-w-[768px] max-h-auto md:max-h-full'>
+          <div className='grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center md:max-w-[900px] md:max-h-full'>
             {
               testimonialLogos.map(({url, alt}) => (
                 <div 
