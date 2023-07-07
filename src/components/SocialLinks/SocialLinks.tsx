@@ -1,20 +1,29 @@
 import Image from 'next/image'
+import {  iconFacebook,
+          iconInstagram,
+          iconTwitter,
+          iconThreads } from '../icons/icons.tsx'
 
 const socialLinks = [
   { 
-    icon: '/img/icon-facebook.svg',
+    icon: iconFacebook,
     alt: 'Facebook',
     href: 'https://www.facebook.com/clipboard-app'
   },
   {
-    icon: '/img/icon-twitter.svg',
+    icon: iconInstagram,
     alt: 'Twitter',
     href: 'https://www.twitter.com/clipboard-app'
   },
   {
-    icon: '/img/icon-instagram.svg',
+    icon: iconTwitter,
     alt: 'Instagram',
     href: 'https://www.instagram.com/clipboard-app'
+  },
+  {
+    icon: iconThreads,
+    alt: 'Threads',
+    href: 'https://threads.net/clipboard-app'
   }
 ]
 
@@ -28,13 +37,7 @@ function SocialLinks() {
             href={href}
             target='_blank'
           >
-            <Image
-              src={icon}
-              alt={alt}
-              width={32}
-              height={32}
-              className='hover:text-primary'
-            />
+            {icon}
           </a>
         ))}
     </div>
