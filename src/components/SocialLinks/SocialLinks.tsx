@@ -2,7 +2,7 @@ import Image from 'next/image'
 import SocialIcon from '../SocialIcon'
 
 const socialLinks = [
-  { 
+  {
     id: 'facebook',
     alt: 'Facebook',
     href: 'https://www.facebook.com/clipboard-app'
@@ -24,22 +24,23 @@ const socialLinks = [
   }
 ]
 
-function SocialLinks() {
+function SocialLinks () {
   return (
     <div className='flex gap-12'>
       {
-        socialLinks.map(({id, alt, href}) => (
+        socialLinks.map(({ id, alt, href }) => (
           <a
             key={alt}
             href={href}
             target='_blank'
-            className="text-color-title hover:text-primary"
+            className='text-color-title hover:text-primary' rel='noreferrer'
           >
-            {<SocialIcon id={id} width={24} height={24} />}
+            <SocialIcon id={id} width={24} height={24} />
           </a>
-        ))}
+        ))
+}
     </div>
-    )
+  )
 }
 
-export default SocialLinks;
+export default SocialLinks
