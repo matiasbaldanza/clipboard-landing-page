@@ -3,9 +3,8 @@ import { Bai_Jamjuree as BaiJamjuree } from 'next/font/google'
 
 // Components
 import ActionButton from '../components/ActionButton'
-import NavMenu from '../components/NavMenu'
-import SocialLinks from '../components/SocialLinks'
 import Icon from '../components/Icon'
+import Footer from '../components/Footer'
 
 const baiJamjuree = BaiJamjuree({
   weight: ['300', '400', '500', '600'],
@@ -168,13 +167,7 @@ export default function Home () {
           </div>
         </section>
       </main>
-      <footer className='py-16 m-auto mt-32 bg-background min-h-7xl'>
-        <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-2xl'>
-          <Image src='/img/logo.svg' height={72} width={72} alt='Clipboard logo' />
-          <NavMenu />
-          <SocialLinks />
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
