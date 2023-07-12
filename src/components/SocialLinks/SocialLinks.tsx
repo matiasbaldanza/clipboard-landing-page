@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import SocialIcon from '../SocialIcon'
-         
+
 const socialLinks = [
   { 
     id: 'facebook',
