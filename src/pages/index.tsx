@@ -5,6 +5,7 @@ import { Bai_Jamjuree as BaiJamjuree } from 'next/font/google'
 import SectionCTA from '../components/SectionCTA'
 import SectionHero from '../components/SectionHero'
 import SectionTestimonialLogos from '../components/SectionTestimonialLogos'
+import SectionMobile from '../components/SectionMobile'
 import SectionFeatures from '../components/SectionFeatures'
 import Footer from '../components/Footer'
 
@@ -33,13 +34,7 @@ export default function Home () {
 
         <SectionHero />
 
-        <section className='flex flex-col items-center gap-8'>
-          <div>
-            <h3>Access Clipboard Anywhere</h3>
-            <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-          </div>
-          <Image src='/img/image-devices.png' width={500} height={500} alt='Multiple devices' />
-        </section>
+        <SectionMobile />
 
         <SectionFeatures />
 
