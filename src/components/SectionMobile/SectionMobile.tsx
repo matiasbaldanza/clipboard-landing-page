@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-function SectionMobile () {
+function SectionMobile (): JSX.Element {
   return (
     <section className='flex flex-col items-center gap-8'>
       <div>

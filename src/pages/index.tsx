@@ -14,7 +14,7 @@ const baiJamjuree = BaiJamjuree({
   subsets: ['latin']
 })
 
-export default function Home () {
+export default function Home (): JSX.Element {
   return (
     // Header background image
     <div className={`${baiJamjuree.className} min-h-screen bg-neutral-50 text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
@@ -33,11 +33,8 @@ export default function Home () {
         />
 
         <SectionHero />
-
         <SectionMobile />
-
         <SectionFeatures />
-
         <SectionTestimonialLogos />
 
         <SectionCTA

@@ -5,7 +5,7 @@ interface ActionButtonProps extends React.ComponentProps<'button'> {
   children: React.ReactNode
 }
 
-function ActionButton ({ color, children }: ActionButtonProps) {
+function ActionButton ({ color, children }: ActionButtonProps): JSX.Element {
   const defaultStyles = 'w-full sm:w-auto sm:px-8 p-3 text-lg text-white border-b-4 rounded-full border-b-black/25 active:border-b-transparent active:translate-y-[2px] transition duration-150 shadow-lg  active:shadow-xs hover:translate-y-[-2px] hover:shadow-xl'
 
   const colorVariants = {

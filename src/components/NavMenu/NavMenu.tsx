@@ -23,7 +23,7 @@ const menuItems = [
   }
 ]
 
-function NavMenu () {
+function NavMenu (): JSX.Element {
   return (
     <nav className='flex flex-col flex-wrap items-center gap-6 text-lg text-color-title md:flex-row md:text-base md:gap-3'>
       {

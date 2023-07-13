@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import SocialIcon from '../SocialIcon'
 
 const socialLinks = [
@@ -24,7 +23,7 @@ const socialLinks = [
   }
 ]
 
-function SocialLinks () {
+function SocialLinks (): JSX.Element {
   return (
     <div className='flex gap-12'>
       {

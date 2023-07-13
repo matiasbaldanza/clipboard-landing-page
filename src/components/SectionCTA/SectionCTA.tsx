@@ -5,7 +5,7 @@ interface SectionCTAProps {
   description: string
 }
 
-function SectionCTA ({ title, description }: SectionCTAProps) {
+function SectionCTA ({ title, description }: SectionCTAProps): JSX.Element {
   return (
     <section className='flex flex-col items-center gap-10'>
       <div>
@@ -17,7 +17,7 @@ function SectionCTA ({ title, description }: SectionCTAProps) {
   )
 }
 
-function DownloadButtons () {
+function DownloadButtons (): JSX.Element {
   return (
     <div className='flex flex-col justify-center w-full gap-6 sm:flex-row'>
       <ActionButton color='primary'>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import NavMenu from '../NavMenu'
 import SocialLinks from '../SocialLinks'
 
-function Footer () {
+function Footer (): JSX.Element {
   return (
     <footer className='py-16 m-auto mt-32 bg-background min-h-7xl'>
       <div className='flex flex-col items-center gap-12 px-8 m-auto md:flex-row md:justify-between md:max-w-screen-xl'>

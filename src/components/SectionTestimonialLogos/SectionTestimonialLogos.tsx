@@ -23,7 +23,7 @@ const testimonialLogos = [
   }
 ]
 
-function SectionTestimonialLogos () {
+function SectionTestimonialLogos (): JSX.Element {
   return (
     <section>
       <div className='grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center md:max-w-[900px] md:max-h-full'>

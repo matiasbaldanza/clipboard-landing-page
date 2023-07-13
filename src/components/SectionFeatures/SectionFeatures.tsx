@@ -1,7 +1,7 @@
 // Components
 import Icon from '../Icon'
 
-function SectionFeatures () {
+function SectionFeatures (): JSX.Element {
   return (
     <section className='flex flex-col items-center gap-12'>
       <div>
