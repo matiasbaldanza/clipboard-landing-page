@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { Bai_Jamjuree as BaiJamjuree } from 'next/font/google'
 
 // Components
-import ActionButton from '../components/ActionButton'
 import Icon from '../components/Icon'
 import SectionCTA from '../components/SectionCTA'
+import SectionTestimonialLogos from '../components/SectionTestimonialLogos'
 import Footer from '../components/Footer'
 
 const baiJamjuree = BaiJamjuree({
@@ -12,32 +12,9 @@ const baiJamjuree = BaiJamjuree({
   subsets: ['latin']
 })
 
-const testimonialLogos = [
-  {
-    url: '/img/logo-google.png',
-    alt: 'Google logo'
-  },
-  {
-    url: '/img/logo-ibm.png',
-    alt: 'IBM logo'
-  },
-  {
-    url: '/img/logo-microsoft.png',
-    alt: 'Microsoft logo'
-  },
-  {
-    url: '/img/logo-hp.png',
-    alt: 'HP logo'
-  },
-  {
-    url: '/img/logo-vector-graphics.png',
-    alt: 'Vector Graphics logo'
-  }
-]
-
 export default function Home () {
   return (
-    // Fondo
+    // Header background image
     <div className={`${baiJamjuree.className} min-h-screen bg-neutral-50 text-color-text bg-[url('/img/bg-header-mobile.png')] md:bg-[url('/img/bg-header-desktop.png')] bg-top bg-no-repeat bg-contain`}>
 
       {/* container */}
@@ -125,25 +102,8 @@ export default function Home () {
             </div>
           </div>
         </section>
-        <section>
-          <div className='grid gap-12 grid-cols-[repeat(auto-fit,_minmax(8rem,_1fr))] items-center justify-items-center md:max-w-[900px] md:max-h-full'>
-            {
-              testimonialLogos.map(({ url, alt }) => (
-                <div
-                  key={alt}
-                  className='relative w-32 h-12 md:w-[6.5rem]'
-                >
-                  <Image
-                    className='object-contain'
-                    src={url}
-                    alt={alt}
-                    fill
-                  />
-                </div>
-              ))
-            }
-          </div>
-        </section>
+
+        <SectionTestimonialLogos />
 
         <SectionCTA
           title='Clipboard for iOS and Mac OS'
