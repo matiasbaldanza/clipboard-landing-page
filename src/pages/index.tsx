@@ -4,6 +4,7 @@ import { Bai_Jamjuree as BaiJamjuree } from 'next/font/google'
 // Components
 import ActionButton from '../components/ActionButton'
 import Icon from '../components/Icon'
+import SectionCTA from '../components/SectionCTA'
 import Footer from '../components/Footer'
 
 const baiJamjuree = BaiJamjuree({
@@ -46,20 +47,11 @@ export default function Home () {
           <h1 className='h-0 opacity-0'>Clipboard</h1>
           <Image src='/img/logo.svg' height={125} width={125} alt='Clipboard logo' />
         </header>
-        <section className='flex flex-col items-center gap-10'>
-          <div>
-            <h2>A history of everything you copy</h2>
-            <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-          </div>
-          <div className='flex flex-col justify-center w-full gap-6 sm:flex-row'>
-            <ActionButton color='primary'>
-              Download for iOS
-            </ActionButton>
-            <ActionButton color='secondary'>
-              Download for Mac
-            </ActionButton>
-          </div>
-        </section>
+
+        <SectionCTA
+          title='A history of everything you copy'
+          description='Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.'
+        />
 
         <section className='flex flex-col items-center gap-8'>
           <div>
@@ -152,20 +144,12 @@ export default function Home () {
             }
           </div>
         </section>
-        <section className='flex flex-col items-center gap-10'>
-          <div>
-            <h2>Clipboard for iOS and Mac OS</h2>
-            <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
-          </div>
-          <div className='flex flex-col justify-center w-full gap-6 sm:flex-row'>
-            <ActionButton color='primary'>
-              Download for iOS
-            </ActionButton>
-            <ActionButton color='secondary'>
-              Download for Mac
-            </ActionButton>
-          </div>
-        </section>
+
+        <SectionCTA
+          title='Clipboard for iOS and Mac OS'
+          description='Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.'
+        />
+
       </main>
       <Footer />
     </div>
