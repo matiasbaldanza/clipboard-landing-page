@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const menuItems = [
   {
@@ -23,12 +23,12 @@ const menuItems = [
   }
 ]
 
-function NavMenu() {
+function NavMenu () {
   return (
     <nav className='flex flex-col flex-wrap items-center gap-6 text-lg text-color-title md:flex-row md:text-base md:gap-3'>
-    {
-      menuItems.map(({title, href}) => (
-        <Link 
+      {
+      menuItems.map(({ title, href }) => (
+        <Link
           key={href}
           href={href}
           className='md:w-1/4 hover:text-primary'
@@ -37,8 +37,8 @@ function NavMenu() {
         </Link>
       ))
     }
-  </nav>
+    </nav>
   )
 }
 
-export default NavMenu;
+export default NavMenu

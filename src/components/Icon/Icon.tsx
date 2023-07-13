@@ -1,7 +1,7 @@
 import type { SVGProps } from 'react'
 
 function Icon ({ href, id, ...props }:
-  SVGProps<SVGSVGElement> & { href: string, id: string}) {
+SVGProps<SVGSVGElement> & { href: string, id: string }) {
   console.log(href)
   return (
     <svg {...props}>

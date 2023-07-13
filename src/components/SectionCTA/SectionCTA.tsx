@@ -1,8 +1,8 @@
 import ActionButton from '../ActionButton'
 
 interface SectionCTAProps {
-  title: string;
-  description: string;
+  title: string
+  description: string
 }
 
 function SectionCTA ({ title, description }: SectionCTAProps) {
